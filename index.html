@@ -5,12 +5,14 @@
 	<meta name="author" content="James Greene">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Bakbak One' rel='stylesheet'>
 	<title>Stamm Travel</title>
 </head>
 <body>
-	<div class="wrapper">
-		<h1 id="stamm">Stamm Travel</h1>
-		<form class="login" action =" ">
+	<div class="wrapper"><!--wrapper for website-->
+		<h1 id="stamm">Stamm Travel</h1><!--header-->
+		<form class="login" action =" "><!--form-->
 			<label for="username">Username:</label><br>
 			<input type="text" id="username" name="username" value=""><br>
 			<label for="password">Password:</label><br>
@@ -18,19 +20,84 @@
 			<input type="submit" value="Login">
 			<a id="newcust">New Customer?</a>
 		</form>
-		<ul>
+		<ul><!--nav-->
 			<li><a href="#" class="active">Home</a></li>
-			<li><a href="#">Destinations</a></li>
-			<li><a href="#">Sign-up Forms</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Destinations</a>
+				<div class="dropdown-content">
+					<a href="alaska.html">Alaska</a> 
+					<a href="#">Atlanta,GA</a>
+					<a href="#">Charleston,SC</a>
+					<a href="#">Hawaii</a>
+					<a href="#">Myrtle Beach,SC</a>
+					<a href="#">New York, NY</a>
+					<a href="#">Orlando,FL</a>
+					<a href="#">Pigeon FOrge, TN</a>
+					<a href="#">Washington, D.C.</a>
+					<a href="#">Williamsburg,VA</a>
+				</div>
+			</li>
+			<li class="dropdown">
+				<a href="javacript:viod(0)" class="dropbtn">Sign-up Forms</a>
+				<div class="dropdown-content">
+					<a href="#">Student Sign-up</a> 
+					<a href="#">Tag-a-long Sign-up</a>
+				</div>
+			</li>
 			<li><a href="#">Payments</a></li>
-			<li><a href="#">Resources</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Resources</a>
+				<div class="dropdown-content">
+					<a href="#">Frequently Asked Questions</a> 
+					<a href="#">Traveling Tales</a>
+					<a href="#">Travel Standards</a> 
+					<a href="https://www.facebook.com/StammTravel">Facebook</a>
+					<a href="https://www.youtube.com/stammtravel">Youtube</a>
+				</div>
+			</li>
 			<li><a href="#">Quotes</a></li>
 			<li><a href="#">Contact Us</a></li>
 		</ul>
-		<div id ="mission">
+		<!-- Slideshow container -->
+		<div class="slide-container">
+			<div class="mySlides fade"> <!-- Full-width images with number and caption text -->
+				<img src="images/pidge.jpg" alt="pigeonforge">
+				<div class="stext">Pigeon Forge,TN</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="images/Atlanta.jpg" alt="Atlanta">
+				<div class="stext">Atlanta,GA</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="images/Hawaii.jpg" alt="Hawaii">
+				<div class="stext">Hawaii</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="images/dc.jpg" alt="Washington">
+				<div class="stext">Washington, D.C.</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="images/Orlando.jpg" alt="Orlando">
+				<div class="stext">Orlando,FL</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="images/Alaska.jpg" alt="Alaska">
+				<div class="stext">Alaska</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="images/new-york.jpg" alt="NewYork">
+				<div class="stext">New York</div>
+			</div>
+			<div class="mySlides fade">
+				<img src="images/cruises.jpg" alt="cruises">
+				<div class="stext">Cruises</div>
+			</div>
+		</div>
+		<div id ="mission"><!--section for mission statement-->
 			<h1>Our Mission</h1>
 			<p class="text">Stamm travel is here to provide you and you family with custom travel packages with trip tracking. We also collect payments from all travelers alleviating unnecessary stress. So, sit back and relax and enjoy your experience with us.</p>
 		</div>
 	</div>
+	<script src="js/index.js"></script>
 </body>
 <footer>Stamm Travel<br> PO Box 932 - Rock Hill, SC 29731</footer>
